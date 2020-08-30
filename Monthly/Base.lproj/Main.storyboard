@@ -14,7 +14,30 @@
                     <view key="view" contentMode="scaleToFill" id="6P3-z6-COY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufI-my-dby">
+                                <rect key="frame" x="0.0" y="88" width="414" height="179"/>
+                                <connections>
+                                    <segue destination="42f-Sl-teb" kind="embed" id="YoX-Ng-IaH"/>
+                                </connections>
+                            </containerView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VNG-Qp-yey">
+                                <rect key="frame" x="0.0" y="267" width="414" height="595"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VNG-Qp-yey" firstAttribute="leading" secondItem="cF8-oM-HDT" secondAttribute="leading" id="AzO-5X-VoW"/>
+                            <constraint firstItem="ufI-my-dby" firstAttribute="centerX" secondItem="6P3-z6-COY" secondAttribute="centerX" id="HhW-ZA-4pa"/>
+                            <constraint firstItem="ufI-my-dby" firstAttribute="height" secondItem="6P3-z6-COY" secondAttribute="height" multiplier="1/5" id="ItR-mF-wAw"/>
+                            <constraint firstItem="cF8-oM-HDT" firstAttribute="trailing" secondItem="VNG-Qp-yey" secondAttribute="trailing" id="NIG-Ay-TtM"/>
+                            <constraint firstItem="ufI-my-dby" firstAttribute="top" secondItem="cF8-oM-HDT" secondAttribute="top" id="bCs-f2-9qr"/>
+                            <constraint firstItem="cF8-oM-HDT" firstAttribute="bottom" secondItem="VNG-Qp-yey" secondAttribute="bottom" id="fpE-5p-5YK"/>
+                            <constraint firstItem="VNG-Qp-yey" firstAttribute="top" secondItem="ufI-my-dby" secondAttribute="bottom" id="iW7-3e-Try"/>
+                            <constraint firstItem="cF8-oM-HDT" firstAttribute="trailing" secondItem="ufI-my-dby" secondAttribute="trailing" id="jGh-kj-ISv"/>
+                            <constraint firstItem="ufI-my-dby" firstAttribute="leading" secondItem="cF8-oM-HDT" secondAttribute="leading" id="noE-Yl-aLX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cF8-oM-HDT"/>
                     </view>
                     <navigationItem key="navigationItem" id="HY6-y7-ogl">
@@ -24,6 +47,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="displayView" destination="ufI-my-dby" id="0IX-UE-r9K"/>
+                        <outlet property="paymentTableView" destination="VNG-Qp-yey" id="nBn-kN-HcG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h3y-dp-1hF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t27-HU-tA9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1988" y="-546"/>
+            <point key="canvasLocation" x="1617" y="-816"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WED-c1-gw7">
@@ -61,6 +88,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CZ2-lx-2o8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-72.463768115942031" y="-88.392857142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IxW-G8-GbR">
+            <objects>
+                <viewController id="42f-Sl-teb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Fh-6N-fwK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="179"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uon-1P-zQf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1635" y="-277"/>
         </scene>
     </scenes>
 </document>
