@@ -17,8 +17,23 @@ class PaymentController {
         SpendingCategory(name: "Other", icon: nil, color: nil)
     ]
     
+    var payments: [Payment] = []
     
     
+    func addPayment(amount: Double, date: Date, recipient: String, category: SpendingCategory, recurringDate: Date?, isRecurringPayment: Bool?, recursionInterval: Payment.RecursionInteral) {
+        
+        
+        let newPayment = Payment(
+            amount: amount,
+            date: date,
+            recipient: recipient,
+            category: category,
+            recurringDate: recurringDate,
+            isRecurringPayment: isRecurringPayment,
+            recursionInterval: recursionInterval)
+        
+        payments.append(newPayment)
+    }
     
     
     
