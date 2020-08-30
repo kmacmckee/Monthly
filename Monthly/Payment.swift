@@ -31,6 +31,6 @@ struct Payment {
 
 struct SpendingCategory {
     let name: String
-    let icon: UIImage
-    let color: UIColor
+    var icon: UIImage?
+    var color: UIColor?
 }
