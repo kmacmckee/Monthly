@@ -16,6 +16,7 @@
 		C4699B8424FC2EDF00933F04 /* NewPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4699B8324FC2EDF00933F04 /* NewPaymentViewController.swift */; };
 		C4699B8624FC330A00933F04 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4699B8524FC330A00933F04 /* Payment.swift */; };
 		C4699B8824FC368100933F04 /* PaymentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4699B8724FC368100933F04 /* PaymentController.swift */; };
+		C4B30FE9251AB99F0060F26F /* RepeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B30FE8251AB99F0060F26F /* RepeatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C4699B8324FC2EDF00933F04 /* NewPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPaymentViewController.swift; sourceTree = "<group>"; };
 		C4699B8524FC330A00933F04 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		C4699B8724FC368100933F04 /* PaymentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentController.swift; sourceTree = "<group>"; };
+		C4B30FE8251AB99F0060F26F /* RepeatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				C4699B6D24FC2AB500933F04 /* AppDelegate.swift */,
 				C4699B6F24FC2AB500933F04 /* SceneDelegate.swift */,
 				C4699B7324FC2AB500933F04 /* Main.storyboard */,
+				C4B30FE8251AB99F0060F26F /* RepeatViewController.swift */,
 				C4699B8524FC330A00933F04 /* Payment.swift */,
 				C4699B8724FC368100933F04 /* PaymentController.swift */,
 				C4699B8324FC2EDF00933F04 /* NewPaymentViewController.swift */,
@@ -103,7 +106,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Kobe McKee";
 				TargetAttributes = {
 					C4699B6924FC2AB500933F04 = {
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4B30FE9251AB99F0060F26F /* RepeatViewController.swift in Sources */,
 				C4699B8424FC2EDF00933F04 /* NewPaymentViewController.swift in Sources */,
 				C4699B6E24FC2AB500933F04 /* AppDelegate.swift in Sources */,
 				C4699B8824FC368100933F04 /* PaymentController.swift in Sources */,
@@ -204,6 +208,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -264,6 +269,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
