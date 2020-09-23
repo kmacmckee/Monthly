@@ -28,7 +28,7 @@ class RepeatViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewDidLoad()
         repeatOptionTableView.dataSource = self
         repeatOptionTableView.delegate = self
-        repeatOptionTableView.layer.cornerRadius = 5
+        repeatOptionTableView.layer.cornerRadius = 10
     }
     
 
