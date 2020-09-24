@@ -10,18 +10,21 @@ import Foundation
 
 class PaymentController {
     
+    init() {
+    }
+    
+    var payments: [Payment] = []
+    
     let categories = [
         SpendingCategory(name: "Entertainment", icon: nil, color: nil),
         SpendingCategory(name: "Bills", icon: nil, color: nil),
         SpendingCategory(name: "Food", icon: nil, color: nil),
-        SpendingCategory(name: "Other", icon: nil, color: nil)
+        SpendingCategory(name: "Other", icon: nil, color: nil),
+        SpendingCategory(name: "Income", icon: nil, color: nil)
     ]
     
-    var payments: [Payment] = []
     
-    
-    func addPayment(amount: Double, date: Date, recipient: String, category: SpendingCategory, recurringDate: Date?, isRecurringPayment: Bool?, recursionInterval: Payment.RecursionInteral) {
-        
+    func addPayment(amount: Double, date: Date, recipient: String, category: SpendingCategory, recurringDate: Date?, isRecurringPayment: Bool?, recursionInterval: Payment.RepeatInteral) {
         
         let newPayment = Payment(
             amount: amount,

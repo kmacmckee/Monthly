@@ -45,6 +45,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C432EDB3251CF86100303E7E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4699B8124FC2D5F00933F04 /* OverviewViewController.swift */,
+				C4699B8324FC2EDF00933F04 /* NewPaymentViewController.swift */,
+				C4B30FE8251AB99F0060F26F /* RepeatViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		C4699B6124FC2AB500933F04 = {
 			isa = PBXGroup;
 			children = (
@@ -67,11 +77,9 @@
 				C4699B6D24FC2AB500933F04 /* AppDelegate.swift */,
 				C4699B6F24FC2AB500933F04 /* SceneDelegate.swift */,
 				C4699B7324FC2AB500933F04 /* Main.storyboard */,
-				C4B30FE8251AB99F0060F26F /* RepeatViewController.swift */,
 				C4699B8524FC330A00933F04 /* Payment.swift */,
 				C4699B8724FC368100933F04 /* PaymentController.swift */,
-				C4699B8324FC2EDF00933F04 /* NewPaymentViewController.swift */,
-				C4699B8124FC2D5F00933F04 /* OverviewViewController.swift */,
+				C432EDB3251CF86100303E7E /* ViewControllers */,
 				C4699B7624FC2AB600933F04 /* Assets.xcassets */,
 				C4699B7824FC2AB600933F04 /* LaunchScreen.storyboard */,
 				C4699B7B24FC2AB600933F04 /* Info.plist */,

@@ -9,6 +9,11 @@
 import UIKit
 
 class RepeatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var paymentController: PaymentController?
+    var payment: Payment?
+    
+    
     @IBOutlet weak var repeatOptionTableView: UITableView!
     
     let repeatOptions = ["Never",

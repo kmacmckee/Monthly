@@ -10,6 +10,8 @@ import UIKit
 
 class NewPaymentViewController: UIViewController {
 
+    var paymentController: PaymentController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -10,8 +10,8 @@ import UIKit
 
 class OverviewViewController: UIViewController/*, UITableViewDelegate, UITableViewDataSource*/ {
     
+    let paymentController = PaymentController()
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,5 +39,15 @@ class OverviewViewController: UIViewController/*, UITableViewDelegate, UITableVi
 //
 //    }
 
+    
+    // MARK: Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toNewPayment" {
+            guard let destinationVC = segue.destination as? NewPaymentViewController else { return }
+            
+        }
+    }
+    
 }
 

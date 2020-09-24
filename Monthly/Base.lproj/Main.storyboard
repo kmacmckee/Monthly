@@ -22,7 +22,7 @@
                     <navigationItem key="navigationItem" id="HY6-y7-ogl">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="mDg-3w-t9v">
                             <connections>
-                                <segue destination="Kvo-K0-LCK" kind="showDetail" id="LDA-Ys-Cfe"/>
+                                <segue destination="Kvo-K0-LCK" kind="showDetail" identifier="toNewPayment" id="LDA-Ys-Cfe"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

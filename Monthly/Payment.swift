@@ -11,10 +11,15 @@ import UIKit
 
 struct Payment {
     
-    enum RecursionInteral {
-        case daily
-        case monthly
-        case yearly
+    enum RepeatInteral: String {
+        case never = "Never"
+        case daily = "Daily"
+        case weekly = "Weekly"
+        case biweekly = "Biweekly"
+        case monthly = "Monthly"
+        case every3months = "Every 3 Months"
+        case every6months = "Every 6 Months"
+        case yearly = "Yearly"
     }
     
     let amount: Double
@@ -24,7 +29,7 @@ struct Payment {
     
     var recurringDate: Date?
     var isRecurringPayment: Bool?
-    var recursionInterval: RecursionInteral
+    var recursionInterval: RepeatInteral
     
 }
 
