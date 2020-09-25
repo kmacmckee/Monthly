@@ -19,6 +19,7 @@ class NewPaymentViewController: UIViewController {
     @IBOutlet weak var titleandNotesView: UIView!
     @IBOutlet weak var datePickerView: UIView!
     @IBOutlet weak var repeatButtonView: UIView!
+    @IBOutlet weak var amountView: UIView!
     
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var notesTextView: UITextView!
@@ -46,10 +47,6 @@ class NewPaymentViewController: UIViewController {
         makePretty()
     }
     
-    @objc func dismissKeyboard(_ sender: UITapGestureRecognizer) {
-        titleTextField.resignFirstResponder()
-        notesTextView.resignFirstResponder()
-    }
 
  
     func makePretty() {
@@ -60,14 +57,16 @@ class NewPaymentViewController: UIViewController {
         plusButton.layer.cornerRadius = 20
         minusButton.layer.cornerRadius = 20
         
-        titleTextField.borderRect(forBounds: CGRect(x: 0.0, y: titleTextField.frame.height - 1, width: titleTextField.frame.width, height: 1.0))
+        amountView.layer.borderWidth = 1
+        amountView.layer.shadowColor = UIColor.black.cgColor
+        amountView.layer.shadowOpacity = 10
+        amountView.layer.shadowOffset = .zero
+        amountView.layer.shadowRadius = 10
+        
+
     }
     
-    
-    
-    
     // MARK: - Navigation
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
         if segue.identifier == "toRepeat" {
@@ -78,7 +77,16 @@ class NewPaymentViewController: UIViewController {
     }
 }
 
+
+// MARK: - Keyboard and Text Editors
 extension NewPaymentViewController: UITextViewDelegate {
+    
+    @objc func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+        titleTextField.resignFirstResponder()
+        notesTextView.resignFirstResponder()
+        amountTextField.resignFirstResponder()
+    }
+    
     func textViewDidBeginEditing(_ textView: UITextView) {
         if textView.text == "Notes" && textView.textColor == .placeholderText {
             textView.text = ""

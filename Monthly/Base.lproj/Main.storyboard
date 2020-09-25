@@ -40,27 +40,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J2D-MH-grv">
-                                <rect key="frame" x="0.0" y="88" width="414" height="128"/>
+                                <rect key="frame" x="-1" y="87" width="416" height="128"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="opQ-gS-p8u">
-                                        <rect key="frame" x="158" y="20.5" width="98" height="87"/>
+                                        <rect key="frame" x="159" y="20.5" width="98" height="87"/>
                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                         <color key="textColor" systemColor="systemGreenColor"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqS-ZM-Ry8">
-                                        <rect key="frame" x="296" y="29" width="78" height="70"/>
+                                        <rect key="frame" x="297" y="29" width="78" height="70"/>
                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                         <state key="normal" image="plus" catalog="system"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSC-hi-nKf">
-                                        <rect key="frame" x="40" y="29" width="78" height="70"/>
+                                        <rect key="frame" x="41" y="29" width="78" height="70"/>
                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                         <state key="normal" image="minus" catalog="system"/>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <constraints>
                                     <constraint firstItem="FSC-hi-nKf" firstAttribute="height" secondItem="opQ-gS-p8u" secondAttribute="height" multiplier="4/5" id="19g-oI-SLH"/>
                                     <constraint firstItem="opQ-gS-p8u" firstAttribute="centerY" secondItem="J2D-MH-grv" secondAttribute="centerY" id="3K6-jI-ETS"/>
@@ -77,7 +77,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FQn-iE-dXg">
-                                <rect key="frame" x="20" y="287" width="374" height="128"/>
+                                <rect key="frame" x="20" y="286" width="374" height="128"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="fEr-Dj-fkX">
                                         <rect key="frame" x="8" y="8" width="358" height="112"/>
@@ -110,14 +110,15 @@
                                 </constraints>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9Hy-QS-gZc">
-                                <rect key="frame" x="20" y="236" width="374" height="32"/>
+                                <rect key="frame" x="20" y="235" width="374" height="32"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
                             </segmentedControl>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SH4-3t-qf6">
-                                <rect key="frame" x="20" y="435" width="374" height="240"/>
+                                <rect key="frame" x="20" y="434" width="374" height="240"/>
                                 <subviews>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="p5m-hz-4mg">
                                         <rect key="frame" x="8" y="8" width="358" height="224"/>
@@ -132,7 +133,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5Y-UO-46k">
-                                <rect key="frame" x="20" y="689" width="374" height="46"/>
+                                <rect key="frame" x="20" y="688" width="374" height="46"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m64-tm-KIF">
                                         <rect key="frame" x="8" y="8" width="358" height="30"/>
@@ -158,14 +159,14 @@
                             <constraint firstItem="x5Y-UO-46k" firstAttribute="top" secondItem="SH4-3t-qf6" secondAttribute="bottom" constant="14" id="CMy-Xf-SyJ"/>
                             <constraint firstItem="FQn-iE-dXg" firstAttribute="height" secondItem="xsp-5m-Kge" secondAttribute="height" multiplier="1/7" id="IjR-Yb-zLy"/>
                             <constraint firstItem="88A-Ib-ptJ" firstAttribute="trailing" secondItem="SH4-3t-qf6" secondAttribute="trailing" constant="20" id="M9c-3L-OeX"/>
-                            <constraint firstItem="88A-Ib-ptJ" firstAttribute="trailing" secondItem="J2D-MH-grv" secondAttribute="trailing" id="NF8-OW-5gd"/>
-                            <constraint firstItem="J2D-MH-grv" firstAttribute="leading" secondItem="88A-Ib-ptJ" secondAttribute="leading" id="Prz-kc-u21"/>
+                            <constraint firstItem="88A-Ib-ptJ" firstAttribute="trailing" secondItem="J2D-MH-grv" secondAttribute="trailing" constant="-1" id="NF8-OW-5gd"/>
+                            <constraint firstItem="J2D-MH-grv" firstAttribute="leading" secondItem="88A-Ib-ptJ" secondAttribute="leading" constant="-1" id="Prz-kc-u21"/>
                             <constraint firstItem="9Hy-QS-gZc" firstAttribute="leading" secondItem="88A-Ib-ptJ" secondAttribute="leading" constant="20" id="QMZ-iD-gKv"/>
                             <constraint firstItem="FQn-iE-dXg" firstAttribute="top" secondItem="9Hy-QS-gZc" secondAttribute="bottom" constant="20" id="QUN-rn-gCy"/>
                             <constraint firstItem="SH4-3t-qf6" firstAttribute="leading" secondItem="88A-Ib-ptJ" secondAttribute="leading" constant="20" id="YqV-j3-R9s"/>
                             <constraint firstItem="FQn-iE-dXg" firstAttribute="leading" secondItem="88A-Ib-ptJ" secondAttribute="leading" constant="20" id="ccU-Np-yVK"/>
                             <constraint firstItem="88A-Ib-ptJ" firstAttribute="trailing" secondItem="9Hy-QS-gZc" secondAttribute="trailing" constant="20" id="eqk-06-sGE"/>
-                            <constraint firstItem="J2D-MH-grv" firstAttribute="top" secondItem="88A-Ib-ptJ" secondAttribute="top" id="j0c-7B-7Gf"/>
+                            <constraint firstItem="J2D-MH-grv" firstAttribute="top" secondItem="88A-Ib-ptJ" secondAttribute="top" constant="-1" id="j0c-7B-7Gf"/>
                             <constraint firstItem="9Hy-QS-gZc" firstAttribute="top" secondItem="J2D-MH-grv" secondAttribute="bottom" constant="20" id="l1R-EF-asW"/>
                             <constraint firstItem="x5Y-UO-46k" firstAttribute="leading" secondItem="88A-Ib-ptJ" secondAttribute="leading" constant="20" id="m1v-gU-avU"/>
                             <constraint firstItem="J2D-MH-grv" firstAttribute="height" secondItem="xsp-5m-Kge" secondAttribute="height" multiplier="1/7" id="qT2-UT-EnO"/>
@@ -180,6 +181,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="amountTextField" destination="opQ-gS-p8u" id="Ep3-pd-SqX"/>
+                        <outlet property="amountView" destination="J2D-MH-grv" id="pPn-Z5-fc9"/>
                         <outlet property="cancelButton" destination="Jms-pd-df0" id="FDR-jh-Fl9"/>
                         <outlet property="categorySegmentedControl" destination="9Hy-QS-gZc" id="QXD-0X-IlB"/>
                         <outlet property="datePicker" destination="p5m-hz-4mg" id="GWt-Wl-wvJ"/>
@@ -298,11 +300,11 @@
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="secondarySystemFillColor">
-            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
