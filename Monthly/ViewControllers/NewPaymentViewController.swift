@@ -14,6 +14,21 @@ class NewPaymentViewController: UIViewController {
     var newPayment: Payment?
     
     @IBOutlet weak var doneButton: UIBarButtonItem!
+    @IBOutlet weak var cancelButton: UIBarButtonItem!
+    
+    @IBOutlet weak var titleandNotesView: UIView!
+    @IBOutlet weak var categorySegmentedView: UIView!
+    @IBOutlet weak var datePickerView: UIView!
+    @IBOutlet weak var repeatButtonView: UIView!
+    
+    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var notesTextView: UITextView!
+    @IBOutlet weak var categorySegmentedControl: UISegmentedControl!
+    @IBOutlet weak var amountTextField: UITextField!
+    @IBOutlet weak var plusButton: UIButton!
+    @IBOutlet weak var minusButton: UIButton!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var repeatButton: UIButton!
     
     
     override func viewDidLoad() {

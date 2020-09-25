@@ -45,7 +45,7 @@ class OverviewViewController: UIViewController/*, UITableViewDelegate, UITableVi
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toNewPayment" {
             guard let destinationVC = segue.destination as? NewPaymentViewController else { return }
-            
+            destinationVC.paymentController = paymentController
         }
     }
     

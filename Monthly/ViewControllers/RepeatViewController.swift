@@ -29,7 +29,7 @@ class RepeatViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewWillLayoutSubviews() {
         guard let payment = newPayment else { return }
-        selectedOption = payment.recursionInterval?.rawValue
+        selectedOption = payment.repeatInterval.rawValue
     }
 
     
