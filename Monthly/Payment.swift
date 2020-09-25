@@ -22,14 +22,15 @@ struct Payment {
         case yearly = "Yearly"
     }
     
-    let amount: Double
-    let date: Date
-    let recipient: String
-    let category: SpendingCategory
+    var title: String?
+    var notes: String?
+    var amount: Double?
+    var date: Date?
+    var recipient: String?
+    var category: SpendingCategory?
     
+    var repeatInterval: RepeatInteral
     var recurringDate: Date?
-    var isRecurringPayment: Bool?
-    var recursionInterval: RepeatInteral
     
 }
 

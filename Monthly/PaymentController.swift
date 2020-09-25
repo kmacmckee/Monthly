@@ -13,7 +13,10 @@ class PaymentController {
     init() {
     }
     
-    var payments: [Payment] = []
+
+    var payments: [Payment] = [
+        Payment(title: "Test", notes: "TestNotes", amount: 20.00, date: Date(), recipient: "Credit Card", category: SpendingCategory(name: "Bill", icon: nil, color: nil), repeatInterval: .monthly, recurringDate: Date())
+        ]
     
     let categories = [
         SpendingCategory(name: "Entertainment", icon: nil, color: nil),
@@ -24,16 +27,15 @@ class PaymentController {
     ]
     
     
-    func addPayment(amount: Double, date: Date, recipient: String, category: SpendingCategory, recurringDate: Date?, isRecurringPayment: Bool?, recursionInterval: Payment.RepeatInteral) {
+    func addPayment(amount: Double, date: Date, recipient: String, category: SpendingCategory, recurringDate: Date?, repeatInterval: Payment.RepeatInteral) {
         
         let newPayment = Payment(
             amount: amount,
             date: date,
             recipient: recipient,
             category: category,
-            recurringDate: recurringDate,
-            isRecurringPayment: isRecurringPayment,
-            recursionInterval: recursionInterval)
+            repeatInterval: repeatInterval,
+            recurringDate: recurringDate)
         
         payments.append(newPayment)
     }

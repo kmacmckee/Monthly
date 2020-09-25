@@ -91,7 +91,7 @@
                                 <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
                                 <state key="normal" title="Repeat"/>
                                 <connections>
-                                    <segue destination="IKe-Q9-Ktg" kind="show" id="pRV-W1-drx"/>
+                                    <segue destination="IKe-Q9-Ktg" kind="show" identifier="toRepeat" id="pRV-W1-drx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -119,6 +119,9 @@
                     <navigationItem key="navigationItem" title="Add Payment" id="i4n-Tj-dS3">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="U6v-nz-5kp"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="doneButton" destination="U6v-nz-5kp" id="p1b-aT-iMa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t27-HU-tA9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,7 +11,7 @@ import UIKit
 class RepeatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var paymentController: PaymentController?
-    var payment: Payment?
+    var newPayment: Payment?
     
     
     @IBOutlet weak var repeatOptionTableView: UITableView!
@@ -25,7 +25,12 @@ class RepeatViewController: UIViewController, UITableViewDelegate, UITableViewDa
                          "Every 6 Months",
                          "Yearly"]
     
-    var selectedOption: String? = "Never"
+    var selectedOption: String?
+    
+    override func viewWillLayoutSubviews() {
+        guard let payment = newPayment else { return }
+        selectedOption = payment.recursionInterval?.rawValue
+    }
 
     
     
@@ -66,14 +71,10 @@ class RepeatViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     
     
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//
+//    }
 
 }
