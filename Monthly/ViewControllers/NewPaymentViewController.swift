@@ -11,7 +11,7 @@ import UIKit
 class NewPaymentViewController: UIViewController {
 
     var paymentController: PaymentController?
-    var newPayment: Payment?
+    //var repeatInterval: Payment.RepeatInteral?
     
     @IBOutlet weak var doneButton: UIBarButtonItem!
     @IBOutlet weak var cancelButton: UIBarButtonItem!
@@ -40,6 +40,7 @@ class NewPaymentViewController: UIViewController {
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard(_:)))
         self.view.addGestureRecognizer(tapGesture)
+        
     }
     
     override func viewWillLayoutSubviews() {
@@ -47,8 +48,6 @@ class NewPaymentViewController: UIViewController {
         makePretty()
     }
     
-
- 
     func makePretty() {
         titleandNotesView.layer.cornerRadius = 10
         datePickerView.layer.cornerRadius = 10
@@ -62,9 +61,27 @@ class NewPaymentViewController: UIViewController {
         amountView.layer.shadowOpacity = 10
         amountView.layer.shadowOffset = .zero
         amountView.layer.shadowRadius = 10
-        
-
     }
+    
+    
+    func saveNewPayment() {
+        guard let title = titleTextField.text,
+              let amountText = amountTextField.text,
+              let controller = paymentController else { return }
+        let notes = notesTextView.text ?? ""
+        let amount = Double(amountText) ?? 0.0
+        //let category =
+        
+        controller.addPayment(title: title,
+                              notes: notes,
+                              amount: amount,
+                              category: SpendingCategory(name: "Entertainment", icon: nil, color: nil),
+                              repeatInterval: /*repeatInterval ?? */.never,
+                              date: datePicker.date)
+    }
+    
+    
+    
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -72,7 +89,7 @@ class NewPaymentViewController: UIViewController {
         if segue.identifier == "toRepeat" {
             guard let destinationVC = segue.destination as? RepeatViewController else { return }
             destinationVC.paymentController = paymentController
-            destinationVC.newPayment = newPayment
+            //destinationVC.repeatInterval = repeatInterval
         }
     }
 }

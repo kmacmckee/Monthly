@@ -11,27 +11,22 @@ import UIKit
 
 struct Payment {
     
+    var title: String
+    var notes: String?
+    var amount: Double
+    var category: SpendingCategory?
+    
+    var repeatInterval: RepeatInteral = .never
+    var date: Date
+    var futureDates: [Date]?
+    
     enum RepeatInteral: String {
         case never = "Never"
         case daily = "Daily"
         case weekly = "Weekly"
-        case biweekly = "Biweekly"
         case monthly = "Monthly"
-        case every3months = "Every 3 Months"
-        case every6months = "Every 6 Months"
         case yearly = "Yearly"
     }
-    
-    var title: String?
-    var notes: String?
-    var amount: Double?
-    var date: Date?
-    var recipient: String?
-    var category: SpendingCategory?
-    
-    var repeatInterval: RepeatInteral
-    var recurringDate: Date?
-    
 }
 
 

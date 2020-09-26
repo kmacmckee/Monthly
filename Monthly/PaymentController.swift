@@ -7,16 +7,12 @@
 //
 
 import Foundation
+import EventKit
 
 class PaymentController {
     
-    init() {
-    }
+    var payments: [Payment] = []
     
-
-    var payments: [Payment] = [
-        Payment(title: "Test", notes: "TestNotes", amount: 20.00, date: Date(), recipient: "Credit Card", category: SpendingCategory(name: "Bill", icon: nil, color: nil), repeatInterval: .monthly, recurringDate: Date())
-        ]
     
     let categories = [
         SpendingCategory(name: "Entertainment", icon: nil, color: nil),
@@ -27,19 +23,36 @@ class PaymentController {
     ]
     
     
-    func addPayment(amount: Double, date: Date, recipient: String, category: SpendingCategory, recurringDate: Date?, repeatInterval: Payment.RepeatInteral) {
-        
-        let newPayment = Payment(
-            amount: amount,
-            date: date,
-            recipient: recipient,
-            category: category,
-            repeatInterval: repeatInterval,
-            recurringDate: recurringDate)
+    func addPayment(title: String, notes: String, amount: Double, category: SpendingCategory, repeatInterval: Payment.RepeatInteral, date: Date) {
+    
+        let newPayment = Payment(title: title,
+                                 notes: notes,
+                                 amount: amount,
+                                 category: category,
+                                 repeatInterval: repeatInterval,
+                                 date: date)
+                                 //futureDates: futureDates)
         
         payments.append(newPayment)
     }
     
     
-    
+//    func getRepeatValue(_ interval: Payment.RepeatInteral) -> EKRecurrenceRule? {
+//        switch interval {
+//        case .never:
+//            return nil
+//        case .daily:
+//            let rule = EKRecurrenceRule(recurrenceWith: .daily, interval: 1, end: nil)
+//            return rule
+//        case .weekly:
+//            let rule = EKRecurrenceRule(recurrenceWith: .weekly, interval: 1, end: nil)
+//            return rule
+//        case .monthly:
+//            let rule = EKRecurrenceRule(recurrenceWith: .monthly, interval: 1, end: nil)
+//            return rule
+//        case .yearly:
+//            let rule = EKRecurrenceRule(recurrenceWith: .yearly, interval: 1, end: nil)
+//            return rule
+//        }
+//    }
 }

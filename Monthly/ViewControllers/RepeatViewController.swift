@@ -11,7 +11,8 @@ import UIKit
 class RepeatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var paymentController: PaymentController?
-    var newPayment: Payment?
+    var repeatInterval: Payment.RepeatInteral?
+    var intervalString: String?
     
     
     @IBOutlet weak var repeatOptionTableView: UITableView!
@@ -19,17 +20,13 @@ class RepeatViewController: UIViewController, UITableViewDelegate, UITableViewDa
     let repeatOptions = ["Never",
                          "Daily",
                          "Weekly",
-                         "Biweekly",
                          "Monthly",
-                         "Every 3 Months",
-                         "Every 6 Months",
                          "Yearly"]
     
-    var selectedOption: String?
     
     override func viewWillLayoutSubviews() {
-        guard let payment = newPayment else { return }
-        selectedOption = payment.repeatInterval.rawValue
+        guard let repeatInt = repeatInterval else { return }
+        intervalString = repeatInt.rawValue
     }
 
     
@@ -52,7 +49,7 @@ class RepeatViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         let option = repeatOptions[indexPath.row]
         cell.textLabel?.text = option
-        if option == selectedOption {
+        if option == intervalString {
             cell.accessoryType = .checkmark
         } else {
             cell.accessoryType = .none
@@ -62,9 +59,9 @@ class RepeatViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        let selectedCell = repeatOptions[indexPath.row]
-        selectedOption = selectedCell
+        let selectedOption = repeatOptions[indexPath.row]
+        intervalString = selectedOption
+        repeatInterval = Payment.RepeatInteral(rawValue: selectedOption)
         repeatOptionTableView.reloadData()
     }
     

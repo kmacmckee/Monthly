@@ -132,7 +132,7 @@
                                     <constraint firstAttribute="bottom" secondItem="p5m-hz-4mg" secondAttribute="bottom" constant="8" id="yJG-cn-VFS"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5Y-UO-46k">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5Y-UO-46k">
                                 <rect key="frame" x="20" y="688" width="374" height="46"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m64-tm-KIF">
@@ -209,10 +209,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="J1G-Vd-HYw">
-                                <rect key="frame" x="32" y="120" width="350" height="352"/>
+                                <rect key="frame" x="32" y="120" width="350" height="220"/>
                                 <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="352" id="Fxh-Bj-eLQ"/>
+                                    <constraint firstAttribute="height" constant="220" id="Fxh-Bj-eLQ"/>
                                 </constraints>
                                 <color key="sectionIndexBackgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <prototypes>
