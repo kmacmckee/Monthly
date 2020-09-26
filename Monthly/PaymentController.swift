@@ -39,6 +39,18 @@ class PaymentController {
         }
     }
     
+    //TODO: Save to CoreData
+    //TODO: Calculate repeating dates
+    //TODO: Create home screen graphic
+    //TODO: Create TableVC for home screen
+    //TODO: Flesh out Spending Categories
+    //TODO: Allow editing of created payments
+    //TODO: Style: Font, Colors, Check appearance for older devices
+    //TODO: Create Alerts for Discard Changes, Invalid Info
+    //TODO: Include support for tracking income as well
+    
+    
+    
     
 //    func getRepeatValue(_ interval: Payment.RepeatInteral) -> EKRecurrenceRule? {
 //        switch interval {
