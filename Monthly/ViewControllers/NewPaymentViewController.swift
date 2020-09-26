@@ -56,18 +56,18 @@ class NewPaymentViewController: UIViewController {
         plusButton.layer.cornerRadius = 20
         minusButton.layer.cornerRadius = 20
         
-        amountView.layer.borderWidth = 1
-        amountView.layer.shadowColor = UIColor.black.cgColor
-        amountView.layer.shadowOpacity = 10
-        amountView.layer.shadowOffset = .zero
-        amountView.layer.shadowRadius = 10
+//        amountView.layer.borderWidth = 1
+//        amountView.layer.shadowColor = UIColor.black.cgColor
+//        amountView.layer.shadowOpacity = 10
+//        amountView.layer.shadowOffset = .zero
+//        amountView.layer.shadowRadius = 10
     }
     
     
     func saveNewPayment() {
         guard let title = titleTextField.text,
               let amountText = amountTextField.text,
-              let controller = paymentController else { return }
+              let controller = paymentController else { return } //TODO: Alert User Invalid info
         let notes = notesTextView.text ?? ""
         let amount = Double(amountText) ?? 0.0
         //let category =
@@ -80,7 +80,16 @@ class NewPaymentViewController: UIViewController {
                               date: datePicker.date)
     }
     
+    // MARK: - Button Actions
+    @IBAction func cancelPressed(_ sender: Any) {
+        //TODO: Alert (Discard Changes?)
+        dismiss(animated: true, completion: nil)
+    }
     
+    @IBAction func donePressed(_ sender: Any) {
+        saveNewPayment()
+        dismiss(animated: true, completion: nil)
+    }
     
     
     // MARK: - Navigation

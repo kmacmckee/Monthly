@@ -34,6 +34,9 @@ class PaymentController {
                                  //futureDates: futureDates)
         
         payments.append(newPayment)
+        for payment in payments {
+            print(payment)
+        }
     }
     
     

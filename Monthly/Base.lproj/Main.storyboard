@@ -176,8 +176,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Payment" id="i4n-Tj-dS3">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Jms-pd-df0"/>
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="U6v-nz-5kp"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Jms-pd-df0">
+                            <connections>
+                                <action selector="cancelPressed:" destination="PzU-2E-NIl" id="RDU-kb-MQ1"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="U6v-nz-5kp">
+                            <connections>
+                                <action selector="donePressed:" destination="PzU-2E-NIl" id="Cvs-pv-SJi"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="amountTextField" destination="opQ-gS-p8u" id="Ep3-pd-SqX"/>
