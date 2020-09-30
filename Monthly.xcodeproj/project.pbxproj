@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C43F811B251FD919008C15E8 /* HomePaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F811A251FD919008C15E8 /* HomePaymentTableViewCell.swift */; };
+		C43F811F2524FB62008C15E8 /* AppearanceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F811E2524FB62008C15E8 /* AppearanceHelper.swift */; };
 		C4699B6E24FC2AB500933F04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4699B6D24FC2AB500933F04 /* AppDelegate.swift */; };
 		C4699B7024FC2AB500933F04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4699B6F24FC2AB500933F04 /* SceneDelegate.swift */; };
 		C4699B7524FC2AB500933F04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4699B7324FC2AB500933F04 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		C43F811A251FD919008C15E8 /* HomePaymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePaymentTableViewCell.swift; sourceTree = "<group>"; };
+		C43F811E2524FB62008C15E8 /* AppearanceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceHelper.swift; sourceTree = "<group>"; };
 		C4699B6A24FC2AB500933F04 /* Monthly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monthly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4699B6D24FC2AB500933F04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4699B6F24FC2AB500933F04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				C43F811A251FD919008C15E8 /* HomePaymentTableViewCell.swift */,
 				C432EDB3251CF86100303E7E /* ViewControllers */,
 				C4699B7624FC2AB600933F04 /* Assets.xcassets */,
+				C43F811E2524FB62008C15E8 /* AppearanceHelper.swift */,
 				C4699B7824FC2AB600933F04 /* LaunchScreen.storyboard */,
 				C4699B7B24FC2AB600933F04 /* Info.plist */,
 			);
@@ -163,6 +166,7 @@
 			files = (
 				C4B30FE9251AB99F0060F26F /* RepeatViewController.swift in Sources */,
 				C4699B8424FC2EDF00933F04 /* NewPaymentViewController.swift in Sources */,
+				C43F811F2524FB62008C15E8 /* AppearanceHelper.swift in Sources */,
 				C4699B6E24FC2AB500933F04 /* AppDelegate.swift in Sources */,
 				C43F811B251FD919008C15E8 /* HomePaymentTableViewCell.swift in Sources */,
 				C4699B8824FC368100933F04 /* PaymentController.swift in Sources */,
