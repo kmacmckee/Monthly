@@ -49,12 +49,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF6348FC2541F65A001238D1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4699B8724FC368100933F04 /* PaymentController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AF6348FD2541F67D001238D1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4699B8524FC330A00933F04 /* Payment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C432EDB3251CF86100303E7E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				C4699B8124FC2D5F00933F04 /* OverviewViewController.swift */,
 				C4699B8324FC2EDF00933F04 /* NewPaymentViewController.swift */,
 				C4B30FE8251AB99F0060F26F /* RepeatViewController.swift */,
+				C43F811A251FD919008C15E8 /* HomePaymentTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -81,9 +98,8 @@
 				C4699B6D24FC2AB500933F04 /* AppDelegate.swift */,
 				C4699B6F24FC2AB500933F04 /* SceneDelegate.swift */,
 				C4699B7324FC2AB500933F04 /* Main.storyboard */,
-				C4699B8524FC330A00933F04 /* Payment.swift */,
-				C4699B8724FC368100933F04 /* PaymentController.swift */,
-				C43F811A251FD919008C15E8 /* HomePaymentTableViewCell.swift */,
+				AF6348FD2541F67D001238D1 /* Models */,
+				AF6348FC2541F65A001238D1 /* Controllers */,
 				C432EDB3251CF86100303E7E /* ViewControllers */,
 				C4699B7624FC2AB600933F04 /* Assets.xcassets */,
 				C43F811E2524FB62008C15E8 /* AppearanceHelper.swift */,
@@ -319,7 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K572L95MDD;
+				DEVELOPMENT_TEAM = 636DWTJB2B;
 				INFOPLIST_FILE = Monthly/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -337,7 +353,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K572L95MDD;
+				DEVELOPMENT_TEAM = 636DWTJB2B;
 				INFOPLIST_FILE = Monthly/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
